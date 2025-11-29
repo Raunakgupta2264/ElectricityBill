@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="Elecbill.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Electricity Bill Calculator</h1>
+
+        <div class="input-section">
+            <label for="units">Enter Units Consumed:</label>
+            <input type="number" id="units" placeholder="e.g., 250">
+            <button onclick="calculateBill()">Calculate Bill</button>
+        </div>
+
+        <div id="result"></div>
+
+        <h2>Tariff Slabs</h2>
+        <table>
+            <tr>
+                <th>Consumption Slab (Units)</th>
+                <th>Rate per Unit (₹)</th>
+            </tr>
+            <tr>
+                <td>0 – 100</td>
+                <td>₹5</td>
+            </tr>
+            <tr>
+                <td>101 – 200</td>
+                <td>₹7</td>
+            </tr>
+            <tr>
+                <td>201+</td>
+                <td>₹10</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="Elecbill.js"></script>
+
+</body>
+</html>
